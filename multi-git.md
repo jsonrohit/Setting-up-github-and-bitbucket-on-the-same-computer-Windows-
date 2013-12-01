@@ -9,10 +9,10 @@ ssh-keygen -t rsa -C "bitbucket email"
 ```
 Enter passphrase when prompted.
 
-Save keys to:
+Save keys to:  
 
-`~/.ssh/id_rsa`
-`~/.ssh/id_rsa_bb`
+`~/.ssh/id_rsa`  
+`~/.ssh/id_rsa_bb`  
 
 2. Attach Keys
 Login to remote repo and add ssh key:
@@ -23,7 +23,7 @@ pbcopy < ~/.ssh/id_rsa_bb.pub
 ```
 
 Paste into text area under ssh settings in your github or bitbucket account.
-Also give the ssh key a title like Ross' Laptop.
+Also give the ssh key a title like Ross' Laptop.  
 
 3. Create Config file
 I am using macvim, alias mvim, enter your editor here if different:
@@ -42,7 +42,7 @@ I am using macvim, alias mvim, enter your editor here if different:
   HostName bitbucket.org
   User git
   IdentityFile ~/.ssh/id_rsa_bb
-```
+```  
 
 4. Add the identity to SSH:
 
@@ -55,14 +55,14 @@ Enter passphrase when prompted.
 
 Check keys were added:
 
-`ssh-add -l`
+`ssh-add -l`  
 
 5. Check that repo recognizes keys:
 
 ```shell
 ssh -T gh
 ssh -T bb
-```
+```  
 
 6. Test repositories
 
@@ -109,15 +109,16 @@ git config user.email "email"
 
 This must be done **once** for every *bitbucket* repo, it is not needed for github
 repos because the global is used in that scenario. There may be a cleaner way
-to do this but right now it works ok.
+to do this but right now it works ok.  
 
 ```shell
 git add .
 git commit -am "first commit"
 git remote add origin git@bb:rosswd/testbucket.git
 git push origin master
+```  
 
-Add some text to readme on bitbucket.org, then:
+Add some text to readme on bitbucket.org, then:  
 
 ```shell
 git fetch origin master
