@@ -1,7 +1,7 @@
 # Setting up github and bitbucket on the same computer
 Github will be the main account and bitbucket the secondary.
 
-1. Create SSH Keys  
+## Create SSH Keys  
 
 ```shell
 ssh-keygen -t rsa -C "github email"
@@ -14,7 +14,7 @@ Save keys to:
 `~/.ssh/id_rsa`  
 `~/.ssh/id_rsa_bb`  
 
-2. Attach Keys  
+## Attach Keys  
 Login to remote repo and add ssh key:
 
 ```shell
@@ -25,7 +25,7 @@ pbcopy < ~/.ssh/id_rsa_bb.pub
 Paste into text area under ssh settings in your github or bitbucket account.
 Also give the ssh key a title like Ross' Laptop.  
 
-3. Create Config file  
+## Create Config file  
 I am using macvim, alias mvim, enter your editor here if different:
 
 `mvim ~/.ssh/config`
@@ -44,7 +44,7 @@ I am using macvim, alias mvim, enter your editor here if different:
   IdentityFile ~/.ssh/id_rsa_bb
 ```  
 
-4. Add the identity to SSH:  
+## Add the identity to SSH:  
 
 ```shell
 ssh-add ~/.ssh/id_rsa
@@ -57,16 +57,16 @@ Check keys were added:
 
 `ssh-add -l`  
 
-5. Check that repo recognizes keys:  
+## Check that repo recognizes keys:  
 
 ```shell
 ssh -T gh
 ssh -T bb
 ```  
 
-6. Test repositories  
+## Test repositories  
 
-## Github (default)
+### Github (default)
 Create a repo online called testmulti
 
 ```shell
@@ -89,7 +89,7 @@ git merge origin/master
 git push origin master
 ```
 
-## Bitbucket (secondary)
+### Bitbucket (secondary)
 Create a repo online called testbucket
 
 ```shell
