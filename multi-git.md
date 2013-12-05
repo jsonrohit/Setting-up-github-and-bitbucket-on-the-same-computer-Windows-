@@ -89,6 +89,8 @@ git merge origin/master
 git push origin master
 ```
 
+If your puzzled why I didn't just do a `git pull` above, it's because I like to compare before I merge.
+
 ### Bitbucket (secondary)
 Create a repo online called testbucket
 
