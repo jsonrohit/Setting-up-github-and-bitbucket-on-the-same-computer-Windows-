@@ -1,4 +1,4 @@
-# Setting up a seperate Github and a bitbucket account
+# Setting up a seperate Github and Bitbucket account
 This guide assumes: 
 
 + git is set up for a single github user using https, not ssh 
