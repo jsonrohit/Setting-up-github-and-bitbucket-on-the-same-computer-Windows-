@@ -109,9 +109,7 @@ git config user.name "Full Name"
 git config user.email "email"
 ```
 
-This must be done **once** for every *bitbucket* repo, it is not needed for github
-repos because the global is used in that scenario. There may be a cleaner way
-to do this but right now it works ok.  
+This must be done **once** for every *bitbucket* (or secondary) repo, it is not needed for github (or primary) repos because the global is used in that scenario. There may be a cleaner way to do this but right now it works okay.  
 
 ```shell
 git add .
