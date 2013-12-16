@@ -106,7 +106,7 @@ overwritten, using secondary account values, at the repo level:*
 
 ```shell
 git config user.name "Full Name"
-git config user.email "email"
+git config user.email email_address
 ```
 
 This must be done **once** for every *bitbucket* (or secondary) repo, it is not needed for github (or primary) repos because the global is used in that scenario. There may be a cleaner way to do this but right now it works okay.  
