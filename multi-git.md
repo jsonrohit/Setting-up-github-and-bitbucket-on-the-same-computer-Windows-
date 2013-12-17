@@ -7,7 +7,8 @@ Github will be the main account and bitbucket the secondary.
 ssh-keygen -t rsa -C "github email"
 ssh-keygen -t rsa -C "bitbucket email"
 ```
-Enter passphrase when prompted.
+Enter passphrase when prompted. If you see an option to save the passphrase in
+your keychain, **do it** for an easier life.
 
 Save keys to:  
 
