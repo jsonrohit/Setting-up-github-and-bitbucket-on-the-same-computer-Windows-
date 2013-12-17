@@ -3,17 +3,20 @@ Github will be the main account and bitbucket the secondary.
 
 ## Create SSH Keys  
 
-```shell
-ssh-keygen -t rsa -C "github email"
-ssh-keygen -t rsa -C "bitbucket email"
-```
+`ssh-keygen -t rsa -C "github email"`
+
 Enter passphrase when prompted. If you see an option to save the passphrase in
 your keychain, **do it** for an easier life.
 
 Save keys to:  
 
 `~/.ssh/id_rsa`  
-`~/.ssh/id_rsa_bb`  
+
+Repeat for bitbucket:
+
+`ssh-keygen -t rsa -C "bitbucket email"`
+
+Save bitbucket key to `~/.ssh/id_rsa_bb`  
 
 ## Attach Keys  
 Login to remote repo and add ssh key:
@@ -23,13 +26,17 @@ pbcopy < ~/.ssh/id_rsa.pub
 pbcopy < ~/.ssh/id_rsa_bb.pub
 ```
 
-Paste into text area under ssh settings in your github or bitbucket account.
+*Obviously run each `pbcopy` command individually.*
+
+Paste into text area, under ssh settings, in your github or bitbucket account.
 Also give the ssh key a title like Ross' Laptop.  
 
 ## Create Config file  
 I am using macvim, alias mvim, enter your editor here if different:
 
 `mvim ~/.ssh/config`
+
+Create your git aliases like so:
 
 ```vim
 #Github (default)
@@ -45,14 +52,14 @@ I am using macvim, alias mvim, enter your editor here if different:
   IdentityFile ~/.ssh/id_rsa_bb
 ```  
 
-## Add the identity to SSH:  
+## Add the identities to SSH:  
 
 ```shell
 ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa_bb
 ```
 
-Enter passphrase when prompted.
+Enter passphrase if prompted.
 
 Check keys were added:
 
@@ -68,7 +75,8 @@ ssh -T bb
 ## Test repositories  
 
 ### Github (default)
-Create a repo online called testmulti
+Create a repo online called testmulti (or one of your choosing), then in Terminal,
+create your repository:
 
 ```shell
 mkdir ~/testmulti
@@ -90,10 +98,12 @@ git merge origin/master
 git push origin master
 ```
 
-If your puzzled why I didn't just do a `git pull` above, it's because I like to compare before I merge.
+If your puzzled why I didn't just do a `git pull` above, it's because I like to 
+compare before I merge. I have had quite a few disasters doing a straight pull
+and thinking it will merge perfectly, don't do it.
 
 ### Bitbucket (secondary)
-Create a repo online called testbucket
+Create a repo online called testbucket and then in Terminal:
 
 ```shell
 mkdir ~/testbucket
@@ -110,7 +120,9 @@ git config user.name "Full Name"
 git config user.email email_address
 ```
 
-This must be done **once** for every *bitbucket* (or secondary) repo, it is not needed for github (or primary) repos because the global is used in that scenario. There may be a cleaner way to do this but right now it works okay.  
+This must be done **once** for every *bitbucket* (or secondary) repo, it is not 
+needed for github (or primary) repos because the global is used in that scenario. 
+There may be a cleaner way to do this but right now it works okay.  
 
 ```shell
 git add .
@@ -129,7 +141,9 @@ git push origin master
 ```
 
 ## Use case: Repo already exists on secondary remote repo (bitbucket)
-So you have a repository that already exists and you want to want to `clone` it but also you want to make sure when you `push` it, the correct user, the bitbucket user pushes. Let's say the repo is called `booker`.
+So you have a repository that already exists and you want to want to `clone` it 
+but also you want to make sure when you `push` it, the correct user, the bitbucket 
+user pushes. Let's say the repo is called `booker`.
 
 ```shell
 git clone git@bb:bb_username/booker.git
