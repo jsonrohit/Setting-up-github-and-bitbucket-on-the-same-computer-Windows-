@@ -1,8 +1,7 @@
 # Setting up a seperate Github and Bitbucket account
 
 If you want to have private repositories at Bitbucket and public repositories at 
-Github, then this is the guide for you. Your life is obviously simpler if you can
-afford Github but I cannot afford it and so this guide was created.
+Github, then this is the guide for you.
 
 This guide assumes: 
 
