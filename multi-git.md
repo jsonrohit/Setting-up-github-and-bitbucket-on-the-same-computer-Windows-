@@ -26,10 +26,10 @@ pbcopy < ~/.ssh/id_rsa.pub
 pbcopy < ~/.ssh/id_rsa_bb.pub
 ```
 
-*Obviously run each `pbcopy` command individually.*
+Obviously run each `pbcopy` command **individually.**
 
 Paste into text area, under ssh settings, in your github or bitbucket account.
-Also give the ssh key a title like Ross' Laptop.  
+Also give the ssh key a title like "your name" Laptop.  
 
 ## Create Config file  
 I am using macvim, alias mvim, enter your editor here if different:
@@ -85,7 +85,7 @@ touch readme.md
 git init
 git add .
 git commit -am "first commit"
-git remote add origin git@gh:rosswd/testmulti.git
+git remote add origin git@gh:username/testmulti.git
 git push origin master
 ```
 
@@ -97,10 +97,6 @@ git diff master origin/master
 git merge origin/master
 git push origin master
 ```
-
-If your puzzled why I didn't just do a `git pull` above, it's because I like to 
-compare before I merge. I have had quite a few disasters doing a straight pull
-and thinking it will merge perfectly, don't do it.
 
 ### Bitbucket (secondary)
 Create a repo online called testbucket and then in Terminal:
@@ -127,7 +123,7 @@ There may be a cleaner way to do this but right now it works okay.
 ```shell
 git add .
 git commit -am "first commit"
-git remote add origin git@bb:rosswd/testbucket.git
+git remote add origin git@bb:username/testbucket.git
 git push origin master
 ```  
 
