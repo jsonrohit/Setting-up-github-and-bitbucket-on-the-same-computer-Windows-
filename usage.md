@@ -1,5 +1,5 @@
 ## Using new dual setup
-*This guide assumes you have followed `multi-git.md` and set up both accounts.
+*This guide assumes you have followed `multi-git.md` and set up both accounts.*
 
 ### Github (default)
 Create a repo online called testmulti (or one of your choosing), then in Terminal,
