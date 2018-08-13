@@ -83,4 +83,4 @@ Now, change into the cloned directory and modify one of the files. Use `git stat
 
 Finally push your changes using `git push origin master`.
 
-bitcoin:bc1qfz05yugpg6xs56shfrmjdtkulm8xqp58k6drw7
+bitcoin:bc1q95kxs25a6d7fp8prqdmgm6sstjxav8q959t30u

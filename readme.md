@@ -10,4 +10,4 @@ This guide assumes:
 + The computer is running Mac OSX 10.7 or greater
 + You already have an account at [Github](http://www.github.com) and another at [Bitbucket](http://bitbucket.org)
 
-bitcoin:bc1qfz05yugpg6xs56shfrmjdtkulm8xqp58k6drw7
+bitcoin:bc1q95kxs25a6d7fp8prqdmgm6sstjxav8q959t30u
