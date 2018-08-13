@@ -16,6 +16,12 @@ Github will be the main account and bitbucket the secondary.
     + Deselect *Enable symbolic links* if checked
     + Click Install and then Finish
 
+## Configure Git
+`git config --global user.name "Your Name"`
+`git config --global user.email "username@email.com"`
+
+Confirm changes: `git config --global -l`
+
 ## Create SSH Keys
 + Right click on desktop and choose *Git Bash here*
 + Enter `cd` to get to home directory (*c:/Users/[username]*)
