@@ -71,3 +71,5 @@ Check keys were added:
 ssh -T gh
 ssh -T bb
 ```  
+
+bitcoin:bc1qfz05yugpg6xs56shfrmjdtkulm8xqp58k6drw7

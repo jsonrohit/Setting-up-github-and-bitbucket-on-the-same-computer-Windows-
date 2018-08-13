@@ -1,5 +1,5 @@
 ## Using new dual setup
-*This guide assumes you have followed `multi-git.md` and set up both accounts.*
+*This guide assumes you have followed `multi-git.md` if on a Unix system or `multi-git-win.md` for a Windows system and set up both accounts.*
 
 ### Github (default)
 Create a repo online called testmulti (or one of your choosing), then in Terminal,
@@ -82,3 +82,5 @@ Remember, because we are using the secondary account, we have to over-ride the g
 Now, change into the cloned directory and modify one of the files. Use `git status` to check the current state, then use `git add 'filename'` and `git commit -m "commit message"`.
 
 Finally push your changes using `git push origin master`.
+
+bitcoin:bc1qfz05yugpg6xs56shfrmjdtkulm8xqp58k6drw7
