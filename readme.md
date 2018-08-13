@@ -6,8 +6,8 @@ Github, then this is the guide for you.
 This guide assumes: 
 
 + Git is set up for a single github user using https, not ssh 
-+ There is only a *known_hosts* file in `~/.ssh/`
-+ The computer is running Mac OSX 10.7 or greater
++ There is only a *known_hosts* file in `~/.ssh/` or ssh hasn't configured yet
++ The computer is running Mac OSX 10.7 or greater; The computer is running Windows 10
 + You already have an account at [Github](http://www.github.com) and another at [Bitbucket](http://bitbucket.org)
 
 bitcoin:bc1q95kxs25a6d7fp8prqdmgm6sstjxav8q959t30u
