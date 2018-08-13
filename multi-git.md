@@ -1,4 +1,4 @@
-# Setting up github and bitbucket on the same computer
+# Setting up github and bitbucket on the same computer (Mac OS)
 Github will be the main account and bitbucket the secondary.
 
 ## Intall Git
@@ -9,7 +9,6 @@ Use [Homebrew](https://brew.sh/) to install Git.
 + `git config --global user.email "username@email.com"`
 
 Confirm changes: `git config --global -l`
-
 
 ## Create SSH Keys  
 
@@ -61,6 +60,14 @@ Create your git aliases like so:
   User git
   IdentityFile ~/.ssh/id_rsa_bb
 ```  
+
+**Note: On Mac OS Sierra onwards you have to add this to the top of the config file:**
+
+```vim
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+```
 
 ## Add the identities to SSH:  
 
