@@ -1,7 +1,7 @@
 # Setting up github and bitbucket on the same computer (Windows)
 
 # Guide for Windows
-[mix3d](https://gist.github.com/mix3d) asked for some help using this guide with windows so here we go. This was tested with Windows 10. 
+[mix3d](https://gist.github.com/mix3d) asked for some help using this guide with windows so here we go. This was tested with Windows 10. Run all commands in **Git Bash** once it's installed.
 
 Github will be the main account and bitbucket the secondary.
 
