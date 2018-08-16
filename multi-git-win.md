@@ -17,8 +17,8 @@ Github will be the main account and bitbucket the secondary.
     + Click Install and then Finish
 
 ## Configure Git
-`git config --global user.name "Your Name"`
-`git config --global user.email "username@email.com"`
++ `git config --global user.name "Your Name"`
++ `git config --global user.email "username@email.com"`
 
 Confirm changes: `git config --global -l`
 
