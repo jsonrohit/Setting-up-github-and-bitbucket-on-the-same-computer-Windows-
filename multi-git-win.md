@@ -9,7 +9,7 @@ Github will be the main account and bitbucket the secondary.
 + Download and install [Git for Windows](https://gitforwindows.org/)
     + In the installer, select everything but decide if you want a desktop icon (2nd step)
     + Select your editor, I use Visual Studio Code
-    + Choose *Use git from the Windows command prompt* on the PATH environment step
+    + Choose *Git from the command line...* on the PATH environment step
     + Choose *Use the OpenSSL library*
     + Choose *Checkout Windows style, commit Unix-style line endings* 
     + Choose *Use minTTY (the default terminal editor of MSYS2)*
