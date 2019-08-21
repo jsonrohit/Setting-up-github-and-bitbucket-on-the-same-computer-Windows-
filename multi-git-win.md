@@ -14,6 +14,7 @@ Github will be the main account and bitbucket the secondary.
     + Choose *Checkout Windows style, commit Unix-style line endings* 
     + Choose *Use minTTY (the default terminal editor of MSYS2)*
     + Deselect *Enable symbolic links* if checked
+    + Don't enable experimental options
     + Click Install and then Finish
 
 ## Configure Git
